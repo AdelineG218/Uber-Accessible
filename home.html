@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="home">
+  <!--Includes the greeting to the user and the settings icon-->
+  <div class="homeHeader">
+    <h2 id="homeName">Hi, [NAME]</h2>
+    <button id="settingsButton">
+      <img alt=settingsIcon src="images/settings-icon.png" width="20" height="20">
+    </button>
+  </div>
+
+  <!--Shows all the scheduled rides. Begins with 0 scheduled rides.-->
+  <div class="displayScheduled">
+  <h3>Scheduled Rides</h3>
+  <br>
+  <!--Text that will display the scheduled rides-->
+  <p id="scheduledRides"></p>
+  <!--Button to schedule a ride-->
+  <button id="homeScheduleBtn">Schedule Repeating Ride</button>
+  </div>
+  
+  <br>
+  <!--Shows a static image of a map. Will become a map that shows real-time location.-->
+  <img alt=map id="map" src="images/simple-map.jpg" width="90%" height="90%">
+
+  <!-- Connects to javascript | keep at bottom> -->
+  <script src="javascript/global.js"></script> 
+  <script src="javascript/home.js"></script>
+</body>
+
+</html>

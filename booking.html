@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+  <h1 id="bookingTitle">Schedule Rides</h1>
+
+  <!--This contains all the items the user will enter about the ride-->
+  <div class="selectedInfoText">
+    
+    <div class="selectedRow">
+      <h4 id="startDateText">Start Date: </h4>
+      <!--Prompts user to enter the start date for the repeating ride.-->
+      <input type="date" id="dateInput" max="2024-12-31" />
+    </div>
+    
+    <div class="selectedRow">
+      <h4 id="pickUpTimeText">Pick Up Time: </h4>
+      <!--Prompts user to enter the pick up time for the repeating ride.-->
+      <input type="time" id="timeInput" name="timeInput" min="00:00" max="23:59" required />
+    </div>
+    
+    <div class="selectedRow">
+      <h4>Repeat: </h4>
+      <!--Prompts user to select the repeat type for the repeating ride from a dropdown.-->
+      <select id="repeatTypeDropdown">
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+        <option value="every2weeks">Every 2 Weeks</option>
+      </select>
+    </div>
+    
+    <div class="selectedRow">
+      <h4>Pick Up: </h4>
+      <!--Prompts user to enter the starting location for the repeating ride.-->
+      <input id="puLocationInput" type=text placeholder="Address">
+    </div>
+    <div class="selectedRow">
+      <h4>Drop Off: </h4>
+      <!--Prompts user to enter the ending location for the repeating ride.-->
+      <input id="doLocationInput" type=text placeholder="Address">
+    </div>
+  </div>
+
+  <!--Button to submit the repeating ride info-->
+  <button id="submitBtn">Submit</button>
+  
+  <!-- Connects to javascript | keep at bottom> -->
+  <script src="javascript/global.js"></script>
+  <script src="javascript/booking.js"></script>
+
+</body>
+
+</html>
