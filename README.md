@@ -19,4 +19,4 @@ There are four total screens, sign-up, home, user accessiblity needs, and schedu
 
 **FAQ:**
 Q - How do I view the website?
-A - 2 options: either copy https://ugh.tigers-23-24.repl.co/ into your web browser or use the repository's files to run the website a different way.
+A - 2 options: either copy https://ugh.tigers-23-24.repl.co/ into your web browser or copy https://adelineg218.github.io/Uber-Accessible/ into your web browser.
